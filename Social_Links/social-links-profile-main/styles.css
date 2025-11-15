@@ -1,0 +1,108 @@
+/*basic reset plus font */
+@font-face {
+    font-family: "Inter";
+    src: url(assets/fonts/Inter-VariableFont_slnt,wght.ttf) format('truetype');
+
+    font-weight: 100 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html, body {
+    min-height: 100dvh;
+}
+
+body {
+    display: flex;
+    background-color: #141414;
+    font-family: 'inter', sans-serif;
+}
+
+/*Element styling*/
+
+img {
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: block;
+}
+
+h1 {
+    font-weight: bold;
+    line-height: 150%;
+    letter-spacing: 0px;
+    font-size: 24px;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+h1, p{
+    margin: 0px;
+    color: #fff;
+}
+
+h2, a {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: 0px;
+}
+
+h2 {
+    color: #C4F82A;
+}
+
+/*Component styling*/
+
+.main-card, a{
+    border-radius: 8px;
+}
+
+.main-card{
+    padding: 2.5em;
+    margin: auto;
+    background-color: #1f1f1f;
+    width: 384px;
+    max-width: 92vw;
+    box-sizing: border-box;
+}
+
+.main-card__nav {
+    display: grid;
+    justify-content: center;
+    gap: 1.15em;
+}
+
+.main-card__bio, .main-card__summary, img{
+    margin-bottom: 1.5em;
+}
+
+.nav__button {
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  width: 304px;
+  height: 45px;
+  text-decoration: none;
+  background-color: #333333;
+  color: white;
+}
+
+/*Responsiveness*/
+
+a:visited {
+  color: white; 
+  background-color: #333333;
+}
+
+a:hover {
+  background-color: #C4F82A !important;
+  color: #333333 !important;
+}
